@@ -1,0 +1,29 @@
+Q: why we choose CompletableFuture..?
+Ans: it help to write asynchronous programming and no blocking code where we call concurrently
+    and we can run N no of task in separate thread without blocking main thread.
+
+    when the task is complete it will notify to main thread (whether the task was completed of failed).
+
+    there are different way to implement asynchronous programming in java using any of the below mechanisms for
+     example you can use Futures, ExecutorService, Callback interfaces,
+     Thread Pools etc.
+
+      1: it cannot be manually complete
+      2: multiple future cannot be chained together
+      3: we can not combine multiple futures together
+      4: No Proper Exception Handling mechanism
+
+Q: what are the disadvantage of future object.
+Q: get() Vs complete()
+Q: runAsync() vs supplyAsync()
+
+Ans: if we want to run background task asynchronously and do not want to return anything from that task,
+then use CompletableFuture.runAsync() method. it takes runnable object
+and return  CompletableFuture<Void>
+    1:  CompletableFuture.runAsync(Runnable)
+    2:  CompletableFuture.runAsync(Runnable, Executor)
+
+if you want to run some background task asynchronously and want to return anything form task. we should use
+ CompletableFuture.supplyAsync(). it takes a Supply<T> and return  CompletableFuture<T> where T is type of the value obtained by calling the given supplier.
+ 1:  CompletableFuture.supplyAsync(Supply<T>)
+ 2:  CompletableFuture.supplyAsync(Supplier<T>, Executor)

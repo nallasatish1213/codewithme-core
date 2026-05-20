@@ -1,0 +1,5 @@
+2: Employee(city, name, age);
+Output: sort city in ascending order, employee in desc order
+
+1:int arr[] = {1, 2, 4, 5, 3, 2, 1};
+output: list of integers in desc order without duplicate
