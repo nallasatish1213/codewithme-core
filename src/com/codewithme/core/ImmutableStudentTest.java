@@ -3,8 +3,6 @@ package com.codewithme.core;
 import com.codewithme.core.collection.Address;
 
 import java.time.Instant;
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -19,7 +17,7 @@ public class ImmutableStudentTest {
                 new Address("hydarabad","500090"));
 
         s1.getAddress().setCity("pune");
-
+        s1.getDateOfJoin().setTime(342524352l);
         System.out.println(s1);
 
     }

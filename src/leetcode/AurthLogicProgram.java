@@ -6,7 +6,7 @@ public class AurthLogicProgram {
      //   fibonacci(15);
     //    reverseInteger(4567);
      //   reverseString("satish");
-        isPrime(5);
+        isPrime(4);
        // reverseStringSB("satish");
     }
 

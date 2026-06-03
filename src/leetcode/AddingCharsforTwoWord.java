@@ -3,7 +3,14 @@ package leetcode;
 public class AddingCharsforTwoWord {
 
     public static void main(String[] args) {
-        mergingTwoWords("abcd","pq");
+        mergingTwoWords("abcd","pq"); // output: apbqcd
+        merge("abcd","pq"); //  output:  abcdpq
+    }
+
+    static void  merge(String s1,String s2) {
+        StringBuilder sb=new StringBuilder(s1);
+        sb.append(s2);
+        System.out.println("Merge: "+ sb);
     }
 
    public static void  mergingTwoWords(String word1, String word2){
